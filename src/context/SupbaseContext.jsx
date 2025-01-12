@@ -22,7 +22,7 @@ export const SupbaseProvider = ({ children }) => {
       } = await supabase.auth.getSession();
       setSession(session);
 
-      const response = await axios.get("http://localhost:5000/getVideos")
+      const response = await axios.get("https://tiktokbackend-dqctajb3efg0ance.eastus-01.azurewebsites.net/getVideos")
       setReels(response.data);
       console.log(reels)
 
