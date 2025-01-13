@@ -57,7 +57,7 @@ const Upload = () => {
       toast.loading("Uploading your video...");
 
       // Send the video file to the backend
-      const response = await axios.post("https://tiktokbackend-dqctajb3efg0ance.eastus-01.azurewebsites.net/upload", formData, {
+      const response = await axios.post("https://tiktok-backend1-ductggd5fce3dkbu.canadacentral-01.azurewebsites.net/upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
